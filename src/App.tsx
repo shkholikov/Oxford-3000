@@ -17,9 +17,8 @@ type ActionType = "translation" | "example";
 function App() {
 	const [state, setState] = useState<IComponentState[]>([]);
 	const [stateUpdates, setStateUpdates] = useState<boolean>(false);
-	const [unchangedState, setUnchangedState] = useState<boolean>(false);
 	const [dataLoaded, setDataLoaded] = useState<boolean>(false);
-	const [savedMsgOpen, setSavedMsgOpen] = useState<boolean>(false);
+	const [savedModalOpen, setSavedModalOpen] = useState<boolean>(false);
 
 	useEffect(() => {
 		const dbRef = ref(db, "sheet");
@@ -53,7 +52,7 @@ function App() {
 		set(ref(db, "sheet"), state)
 			.then(() => {
 				setStateUpdates(false);
-				setSavedMsgOpen(true);
+				setSavedModalOpen(true);
 			})
 			.catch((err) => {
 				console.error("Error occured during saving the data: " + err);
@@ -61,13 +60,13 @@ function App() {
 	};
 
 	const savedModalWindow = (
-		<Modal centered={true} size="mini" open={savedMsgOpen} onClose={() => setSavedMsgOpen(false)}>
+		<Modal centered={true} size="mini" open={savedModalOpen} onClose={() => setSavedModalOpen(false)}>
 			<Modal.Header>Thank you!</Modal.Header>
 			<Modal.Content>
 				<Modal.Description>Your data has been saved.</Modal.Description>
 			</Modal.Content>
 			<Modal.Actions>
-				<Button onClick={() => setSavedMsgOpen(false)}>OK</Button>
+				<Button onClick={() => setSavedModalOpen(false)}>OK</Button>
 			</Modal.Actions>
 		</Modal>
 	);
@@ -123,7 +122,6 @@ function App() {
 										<Table.HeaderCell>Example</Table.HeaderCell>
 									</Table.Row>
 								</Table.Header>
-
 								<Table.Body>
 									{state?.map((item, id) => (
 										<Table.Row key={id}>
