@@ -1,4 +1,4 @@
-# 📖 Exford 3000 Wordlist
+# 📖 Oxford 3000 Wordlist
  
 ### 🧐 What is Oxford 3000 wordlist?
 If you know 2500-3000 words, you will be able to understand 80% of the language used in business and everyday communication. The remaining 20% can be inferred from context. That’s why it’s important to know the most commonly used words to speed up your language learning journey and to become fluent faster. Oxford composed a list of 3000 most common words in the English language that are necessary to know in order to communicate fluently. By the way, to reach the Upper-Intermediate level, you need to learn at least 3000 words!
