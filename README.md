@@ -6,3 +6,5 @@ If you know 2500-3000 words, you will be able to understand 80% of the language 
 ### 🤓 Why this app? 
 This application contains all these 3000 words in a table inside. The data is stored in a real-time Google Firebase database. So you can use the app by cloning it to your own repository. The only thing you need to do is upload the new oxford-worlidlist.json to your own Firebase realtime database (if you want to use your own database). Otherwise, you can test the application using the link below.
 
+### 🧪 Test here: https://shkholikov.github.io/Oxford-3000/
+
