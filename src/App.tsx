@@ -1,23 +1,6 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
-import {
-	Table,
-	Input,
-	Form,
-	TextArea,
-	Grid,
-	Header,
-	Icon,
-	Divider,
-	Button,
-	Segment,
-	Dimmer,
-	Loader,
-	Image,
-	Sticky,
-	Ref,
-	Portal
-} from "semantic-ui-react";
+import { Table, Input, Form, TextArea, Grid, Header, Icon, Divider, Button, Segment, Dimmer, Loader, Image, Modal } from "semantic-ui-react";
 import { db } from "./firebase";
 import { onValue, ref, set } from "firebase/database";
 
@@ -76,9 +59,17 @@ function App() {
 			});
 	};
 
-	const handleClose = () => {
-		setSavedMsgOpen(false);
-	};
+	const savedModalWindow = (
+		<Modal centered={true} size="mini" open={savedMsgOpen} onClose={() => setSavedMsgOpen(false)}>
+			<Modal.Header>Thank you!</Modal.Header>
+			<Modal.Content>
+				<Modal.Description>Your data has been saved.</Modal.Description>
+			</Modal.Content>
+			<Modal.Actions>
+				<Button onClick={() => setSavedMsgOpen(false)}>OK</Button>
+			</Modal.Actions>
+		</Modal>
+	);
 
 	return (
 		<div>
@@ -117,23 +108,7 @@ function App() {
 				</Grid.Row>
 				<Grid.Row centered>
 					<Grid.Column width={15}>
-						<Portal onClose={handleClose} open={savedMsgOpen}>
-							<Segment
-								style={{
-									left: "37%",
-									position: "fixed",
-									top: "40%",
-									zIndex: 1000,
-									textAlign: "center"
-								}}
-							>
-								<Header>This is a controlled portal</Header>
-								<p>Portals have tons of great callback functions to hook into.</p>
-								<p>To close, simply click the close button or click away</p>
-
-								<Button content="Close Portal" color="green" onClick={handleClose} />
-							</Segment>
-						</Portal>
+						{savedModalWindow}
 						{dataLoaded === true ? (
 							<Table color="blue" striped size="large" sortable={true}>
 								<Table.Header>
