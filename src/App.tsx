@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Table, Input, Form, TextArea, Grid, Header, Icon, Divider, Button, Segment, Dimmer, Loader, Image, Modal } from "semantic-ui-react";
 import { db } from "./firebase";
 import { onValue, ref, set } from "firebase/database";
+import ScrollToTop from "react-scroll-to-top";
 
 interface IComponentState {
 	Id: number;
@@ -73,6 +74,7 @@ function App() {
 
 	return (
 		<div>
+			<ScrollToTop smooth color="#2185d0" />
 			<Grid>
 				<Grid.Row centered>
 					<Grid.Column textAlign="center" width={12}>
