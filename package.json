@@ -2,7 +2,7 @@
 	"name": "oxford-3000",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://github.com/shkholikov/Oxford-3000",
+	"homepage": "https://shkholikov.github.io/Oxford-3000/",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
