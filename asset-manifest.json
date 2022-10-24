@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Oxford-3000/static/css/main.181c7e6d.css",
-    "main.js": "/Oxford-3000/static/js/main.3541ade3.js",
+    "main.js": "/Oxford-3000/static/js/main.f9f4d1e5.js",
     "static/js/787.62811902.chunk.js": "/Oxford-3000/static/js/787.62811902.chunk.js",
     "static/media/brand-icons.svg": "/Oxford-3000/static/media/brand-icons.6729d29753e000c17489.svg",
     "static/media/icons.svg": "/Oxford-3000/static/media/icons.62d9dae4e0040e81c980.svg",
@@ -21,11 +21,11 @@
     "static/media/outline-icons.woff2": "/Oxford-3000/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "index.html": "/Oxford-3000/index.html",
     "main.181c7e6d.css.map": "/Oxford-3000/static/css/main.181c7e6d.css.map",
-    "main.3541ade3.js.map": "/Oxford-3000/static/js/main.3541ade3.js.map",
+    "main.f9f4d1e5.js.map": "/Oxford-3000/static/js/main.f9f4d1e5.js.map",
     "787.62811902.chunk.js.map": "/Oxford-3000/static/js/787.62811902.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.181c7e6d.css",
-    "static/js/main.3541ade3.js"
+    "static/js/main.f9f4d1e5.js"
   ]
 }
