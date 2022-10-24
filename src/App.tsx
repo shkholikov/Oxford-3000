@@ -88,7 +88,7 @@ function App() {
 				</Grid.Column>
 			</Grid.Row>
 			<Divider horizontal>
-				👋🏻 Say Hi <a href="https://www.instagram.com/sh.kholikov/">Shakhzod Kholikov</a> before you get started
+				👋🏻 Say Hi <a href="https://www.instagram.com/sh.kholikov/">Shakhzod Kholikov</a>
 			</Divider>
 			<Grid.Row centered>
 				<Grid.Column textAlign="center">
