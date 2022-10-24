@@ -87,7 +87,9 @@ function App() {
 					</Header>
 				</Grid.Column>
 			</Grid.Row>
-			<Divider horizontal>Let's get started</Divider>
+			<Divider horizontal>
+				👋🏻 Say Hi <a href="https://www.instagram.com/sh.kholikov/">Shakhzod Kholikov</a> before you get started
+			</Divider>
 			<Grid.Row centered>
 				<Grid.Column textAlign="center">
 					<Button color="blue" size="large" loading={stateUpdates} onClick={onSave}>
