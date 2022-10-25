@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
 import { Table, Input, Form, TextArea, Grid, Header, Icon, Divider, Button, Segment, Dimmer, Loader, Image, Modal } from "semantic-ui-react";
-import { db } from "./firebase";
+import { db } from "./firebase.config";
 import { onValue, ref, set } from "firebase/database";
 import ScrollToTop from "react-scroll-to-top";
 

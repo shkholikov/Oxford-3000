@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-	apiKey: "AIzaSyBXAxbm8ZUg0Cm8y8q_YdY98qeTwdIkI9A",
-	authDomain: "oxford-3000-6c314.firebaseapp.com",
+	apiKey: process.env.API_KEY,
+	authDomain: process.env.AUTH_DOMAIN,
 	databaseURL: "https://oxford-3000-6c314-default-rtdb.firebaseio.com",
-	projectId: "oxford-3000-6c314",
-	storageBucket: "oxford-3000-6c314.appspot.com",
-	messagingSenderId: "590519030140",
-	appId: "1:590519030140:web:e5eb3d3c5e50da3322d4f9"
+	projectId: process.env.PROJECT_ID,
+	storageBucket: process.env.STORAGE_BUCKET,
+	messagingSenderId: process.env.MESSAGING_SENDER_ID,
+	appId: process.env.APP_ID
 };
 
 // Initialize Firebase
